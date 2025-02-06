@@ -1,7 +1,17 @@
+import pip
+
+def install(package):
+    if hasattr(pip, 'main'):
+        pip.main(['install', package])
+    else:
+        pip._internal.main(['install', package])
+
+install("supabase")
 import paho.mqtt.client as mqtt
 import ssl
 import json
 from supabase import create_client, Client
+
 # HiveMQ Cloud connection details
 broker_address = "b9a9599b658d4bfa80390c3585960a4f.s1.eu.hivemq.cloud"
 broker_port = 8883
