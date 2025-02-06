@@ -5,7 +5,7 @@ def install(package):
         pip.main(['install', package])
     else:
         pip._internal.main(['install', package])
-
+install("paho-mqtt")
 install("supabase")
 import paho.mqtt.client as mqtt
 import ssl
