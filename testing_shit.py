@@ -17,7 +17,7 @@ broker_address = "b9a9599b658d4bfa80390c3585960a4f.s1.eu.hivemq.cloud"
 broker_port = 8883
 username = "Mahmoud7essam"
 password = "Mahmoud7essam"
-topic = "Reads"  # Replace with your actual topic
+topic = "ESP32/sensors"  # Replace with your actual topic
 messages = []
 # Callback when connecting to the broker
 def on_connect(client, userdata, flags, rc):
